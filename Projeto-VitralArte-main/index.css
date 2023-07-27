@@ -1,0 +1,70 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nome {
+    font: 775 50px 'poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 25px;
+}
+
+.item {
+    font: 500 20px 'open sans', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+    top: 0px;}
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 200px;
+        flex-wrap: wrap;}
+
+.email-numero{
+    height: 20px
+    ;padding: 20px;
+}
+
+        .email, .numero {
+            background-color: 
+            #106EEA; color: white;
+            height: 20px;
+             padding: 10px;
+        }
+
+
+
+        .email{
+            position: absolute;margin-left: 195px; width: 300px;
+        }
+.numero{
+    margin-left: 540px;
+}
+
+.header{
+    background-color: #106EEA;
+    padding: 10px;
+    
+
+}
+
+.umpouco{
+    font: 620px 45 'roboto' sans-serif; margin-left: 200px; padding: 50px;
+}
+.sobre-nos{
+    font: 620px 45 'roboto' sans-serif; margin-left: 440px; margin-top: -5.48rem; color: #106EEA;
+}
