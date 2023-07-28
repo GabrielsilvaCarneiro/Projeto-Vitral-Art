@@ -15,17 +15,58 @@ img {
     height: auto;
 }
 
+@font-face {
+    font-family: PoppinsB;
+    src: url(Font/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: SansB;
+    src: url(Font/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: SansR;
+    src: url(Font/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: SansS;
+    src: url(Font/OpenSans-SemiBold.ttf);
+}
+@font-face {
+    font-family: PoppinsR;
+    src: url(Font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsS;
+    src: url(Font/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: RobotoB;
+    src: url(Font/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoM;
+    src: url(Font/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: RobotoR;
+    src: url(Font/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoS;
+    src: url(Font/RobotoMono-SemiBold.ttf);
+}
+
 .nome {
-    font: 775 50px 'poppins', sans-serif;
+    font: 775 50px 'poppinsB', sans-serif;
     color: rgb(0, 0, 0);
     padding: 25px;
+
 }
 
 .item {
-    font: 500 20px 'open sans', sans-serif;
+    font: 500 20px 'sans', sans-serif;
     color: rgb(0, 0, 0);
-    margin-left: 50px;
-    top: 0px;}
+    margin-left: 50px;}
 
     .container {
         display: flex;
@@ -39,32 +80,329 @@ img {
     ;padding: 20px;
 }
 
-        .email, .numero {
+        .email-vitra, .numero-tell {
             background-color: 
             #106EEA; color: white;
             height: 20px;
-             padding: 10px;
+             padding: 4px;
+             font: 'sans';
         }
 
 
 
-        .email{
+        .email-vitra{
             position: absolute;margin-left: 195px; width: 300px;
         }
-.numero{
+.numero-tell{
     margin-left: 540px;
 }
 
 .header{
     background-color: #106EEA;
-    padding: 10px;
+    padding: 1px;
     
 
 }
 
 .umpouco{
-    font: 620px 45 'roboto' sans-serif; margin-left: 200px; padding: 50px;
+    font: 620 35px 'RobotoM', sans-serif; margin-left: 240px; position: absolute; margin-top: 0px;
 }
 .sobre-nos{
-    font: 620px 45 'roboto' sans-serif; margin-left: 440px; margin-top: -5.48rem; color: #106EEA;
+    font: 620 35px 'RobotoM', sans-serif; margin-left: 430px; margin-top: 217.68px; color: #106EEA;
+}
+
+.texto_imagem {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.titulo {
+    color: #000000;
+    position: absolute;
+    left: 950px;
+    top: 300px;
+    font: 'Poppins' , sans-serif; font-size: 15px;
+}
+
+.subtitulo {
+    color: #000000;
+    position: absolute;
+    left: 870px;
+    top: 365px;
+    font: 400 30px 'Poppins' , sans-serif;
+}
+
+.texto-sobrenos{
+    text-align: justify; font:'sans', sans-serif;padding-left: 180px; position: absolute; margin-top: -480px; margin-right: 790px; font-size: 18px;
+}
+
+.imgum{position: absolute; width:480px; height: 600px;
+    border-radius: 10px; margin-left: 800px; margin-top: -645px;
+}
+
+.caixas{
+    display: flex;
+}
+.icon{
+    width: 100px;
+}
+#caixa-cima .fone{
+    font-family: 'SansB';
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 45px;
+}
+#caixa-cima .sub{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+#caixa-cima .caixa{
+    background-color: #F1F6FE;
+    border: 1px solid #8CA9CE;
+    border-radius: 10px;
+    width: 254px;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+#caixa-cima{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 135px;
+}
+.titulo, #equipe .titulo{
+    font-family: 'RobotoB';
+font-size: 35px;
+font-weight: 700;
+line-height: 41px;
+}
+.texto, #equipe .texto{
+    width: 856px;
+    font-family:'Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+}
+#equipe{
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 500px;
+}
+#caixa-baixo .texto{
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    width: 230px
+}
+#caixa-baixo .caixa{
+    height: 194px;
+    width: 274px;
+    border: 1px solid #8CA9CE;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#caixa-baixo{
+    margin: 0 85px;
+    flex-wrap: wrap;
+    gap: 87px;
+    justify-content: center;
+    margin-top: 71px;
+    padding-bottom: 101px;
+}
+
+
+
+
+.titulo-2{
+    font-family: 'PoppinsB';
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+}
+.texto{
+    font-family: 'Roboto';
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+text-align: center;
+}
+.pessoas{
+    border: 1px solid #000000;
+    border-radius: 7px;
+}
+.conteudo{
+    padding: 28px 0;
+}
+#baixo .texto{
+    font-family: 'Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: justify;
+}
+#baixo .conteudo{
+    margin: 62px 182px;
+}
+.two{
+    border-bottom:  solid #1150A3;
+}
+#contato .titulo-2{
+    font-family: 'RobotoB';
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 41px;
+    text-align: center;
+}
+#contato .texto{
+    font-family: 'Sans';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: center;
+    margin: 5px 320px;
+}
+#contato{
+    margin-top: 182px;
+}
+.endereco .titulo-2{
+    font-family: 'RobotoB';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+}
+.endereco .texto{
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center; 
+    width: 303px;   
+}
+.endereco{
+    border: 1.23px solid #8CA9CE;
+    padding: 130px 58px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#end-cont{
+    margin: 0 182px;
+}
+input{
+    background-color: #E5E5E5;
+}
+#nome-Ps, #email{
+    width: 274px;
+    height: 63px;
+    border-radius: 15px;
+}
+#nome-Ps, #email, #assunto, #msg{
+    font-family: 'RobotoB';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+    color: #C1C1C1;
+    padding: 0 21px;
+}
+#assunto{
+    width: 587px;
+    height: 63px;
+    border-radius: 15px;
+}
+#msg{
+    width: 587px;
+    height: 159px;
+    border-radius: 15px;
+}
+form{
+    width: 587px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 39px;
+    justify-content: center;
+}
+#end-cont{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-family: 'RobotoB';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    background-color: #106EEA;
+    border-radius: 15px;
+    padding: 15px 45px;
+    align-self: center;
+}
+footer .container-final{
+    background-color: #1150A3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px;
+    margin-top: 135px;
+}
+footer .menu-final{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+footer .item-final{
+    font-family:'Sans';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    color: white;
+}
+.rede-logos{
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+.redes .titulo-2{
+    color: white;
+    font-family: 'Sans';
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 41px;
+    text-align: center;
+}
+.logo{
+    width: 50px;
+}
+
+.equipe{
+    margin-right: 200px;
+}
+
+.pessoas{
+    width: 300px; align-items: center;
+    text-align: center;
 }
